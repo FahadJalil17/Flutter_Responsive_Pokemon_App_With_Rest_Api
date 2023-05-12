@@ -113,7 +113,7 @@ class DetailScreen extends StatelessWidget {
                       ),
                     ),
 
-                    // @nd TabBar
+                    // 2nd TabBar
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 12),
                       child: Column(

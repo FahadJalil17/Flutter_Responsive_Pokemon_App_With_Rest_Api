@@ -20,18 +20,20 @@ Widget landscapeContainer(data){
             ],
           ),
 
-          SizedBox(height: 30,),
+          SizedBox(height: 50,),
 
         ],
       ),
-      Align(
-        alignment: Alignment.center,
-        child: Stack(
-          alignment: Alignment.bottomCenter, // for showing upper image on bottom of pokeball image
-          children: [
-            Image.asset('assets/pokeball.jpg', width: 180, color: Colors.white.withOpacity(0.5),),
-            Image.asset(data["imageurl"], width: 160,)
-          ],
+      Expanded(
+        child: Align(
+          alignment: Alignment.center,
+          child: Stack(
+            alignment: Alignment.bottomCenter, // for showing upper image on bottom of pokeball image
+            children: [
+              Image.asset('assets/pokeball.jpg', width: 200, color: Colors.white.withOpacity(0.5),),
+              Image.network(data["imageurl"], width: 180)
+            ],
+          ),
         ),
       )
     ],
